@@ -1,0 +1,372 @@
+@charset "UTF-8";
+
+:root {
+  --bla: #48a2ff;
+  --gra: #aaa;
+  --naturmorkebla: #0367A6;
+  --naturbla: #048ABF;
+  --naturlysebla: #049DBF;
+  --naturgul: #F2A007;
+  --naturbrun: #F27405;
+}
+
+html {
+  font-size: 100%;  /* 16px */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: 'Raleway', sans-serif;
+}
+
+
+h1 {
+  font-size: 3rem;
+  font-weight: 300;
+}
+
+.tagline {
+  font-size: 2.2rem;
+  font-weight: 300;
+}
+
+h2, h3 {
+  font-weight: 400;
+
+}
+
+h2 {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+}
+
+h3 {
+  margin-top: 3rem;
+  font-size: 1.5rem;
+}
+
+h4 {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+p {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  line-height: 2rem;
+}
+
+
+.twocol, .threecol, .fourcol {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: minmax(50px, auto);
+}
+
+/* .wrapper > * {
+background-color: #eee;
+}
+
+.wrapper > *:nth-child(odd) {
+background-color: #ddd;
+} */
+
+.art a {
+  display: inline-block;
+  /* border: 1px solid var(--gra); */
+  min-width: 150px;
+  transition: 0.2s;
+}
+
+.art a:hover {
+  filter: grayscale(100%);
+  transform: scale(1.1);
+}
+
+.art img {
+  display: block;
+  margin: auto;
+  max-width: 140px;
+  max-height: 200px;
+}
+
+nav, header, footer {
+  color: #000;
+}
+header, footer {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+header {
+  padding-top: 110px;
+  padding-bottom: 30px;
+  background-image: url("../images/art/black_explosion-web.png");
+  background-repeat: no-repeat;
+}
+
+footer {
+  padding-top: 10px;
+}
+
+nav label, #hamburger {
+  display: none;
+}
+
+nav {
+  border-bottom: 1px solid var(--gra);
+}
+
+/* Menu items */
+nav ul {
+  list-style-type: none;  /* fjerne bullets */
+}
+
+nav ul li {
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+/* Show Hamburger */
+nav label {
+  display: inline-block;
+  color: #000;
+  font-style: normal;
+  font-size: 1.2em;
+  padding: 10px;
+}
+
+/* Break down menu items into vertical */
+nav ul li {
+  display: block;
+  border-top: 1px solid var(--gra);
+}
+
+/* Toggle show/hide menu on checkbox click */
+nav ul {
+  display: none;
+}
+nav input:checked ~ ul {
+  display: block;
+}
+/* Toggle show/hide menu on checkbox click */
+nav ul {
+  display: none;
+}
+nav input:checked ~ ul {
+  display: block;
+}
+
+nav a {
+  padding: 20px 1rem;
+  text-decoration: none;
+  display: block;
+  color: #000;
+}
+
+nav a:link, nav a:visited {
+  font-weight: 400;
+}
+
+nav a:hover, nav a:active, nav a:focus, nav a.current {
+  font-weight: 600;
+}
+
+nav a.current {
+  border-left: 2px solid #000;
+  text-decoration: underline;
+}
+
+main {
+  padding: 50px 2% 20px 2%;
+}
+
+main.index {
+  padding: 0;
+}
+
+main ul, ol {
+  margin-top: 16px;
+}
+
+main li {
+  margin-top: 13px;
+  margin-left: 2%;
+  padding-left: 3px;
+}
+
+li.box {
+  margin: 1%;
+}
+
+.ommeg {
+  border: 1px solid var(--gra);
+  text-align: center;
+  min-height: 230px;
+  padding-top: 85px;
+}
+
+.box {
+  border: 1px solid var(--gra);
+  display: inline-block;
+  background-color: rgba(222, 222, 222, 0.8);;
+  background-blend-mode: lighten;
+  background-position: center;
+}
+
+#about {
+  background-image: url("../images/about/paal.png");
+}
+
+#work {
+  background-image: url("../images/work/web-mpoe-omslag.jpg");
+}
+
+#freetime {
+  background-image: url("../images/art/colors.png");
+}
+
+#games, #games-formal {
+  background-image: url("../images/games/formal-web.png");
+}
+
+.box a {
+  font-size: 2rem;
+  display: inline-block;
+  text-align: center;
+  text-decoration: underline;
+  width: 100%;
+  min-height: 150px;
+  padding-top: 100px;
+  color: #000;
+
+}
+
+.box a:link, .box a:visited {
+}
+
+.box a:hover, .box a:focus {
+  font-weight: 600;
+}
+
+.art {
+  display: inline-block;
+}
+
+.contact ul {
+  list-style-type: none;
+}
+
+.contact ul li {
+  margin-top: 0;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.contact ul li a {
+  min-width: 500px;
+  --font-weight: 400;      /* brukes på .text */
+}
+
+.contact ul li a:hover, .contact ul li a:focus {
+  --font-weight: 600;      /* brukes på .text */
+}
+
+.contact ul li .icon {
+  padding: 1rem 0;
+  min-width: 3rem;
+  color: #000;
+  text-align: center;
+}
+
+.contact ul li .icon img {
+  max-width: 20px;
+}
+
+.contact ul li .text {
+  text-decoration: underline;
+  font-weight: var(--font-weight);
+  padding: 1rem 0;
+  display: inline-block;
+  width: 190px; /*nok til å fylle hele kontaktbredden*/
+  color: #000;
+  background-color: #fff;
+}
+
+.mailtext {      /*trenger ikke se inputfeltet som bare er der for å holde på teksten man skal kopiere*/
+}
+
+
+/* tablet */
+@media only screen  and (min-width : 768px) { /*––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/
+  .ommeg {
+    grid-column: 1/4;
+  }
+  
+  .twocol {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .threecol {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .fourcol {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .fivecol {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  header h1 {
+    font-size: 5rem;
+  }
+
+  header {
+    padding-top: 200px;
+    padding-bottom: 40px;
+    background-position: 327px -164px;
+    background-size: cover;
+  }
+
+  nav ul {
+    display: flex;
+  }
+
+  nav ul li {
+    border-top: none;
+  }
+
+  nav a {
+    padding: 20px 1em;
+  }
+
+  nav a.current {
+    border-left: none;
+    text-decoration: none;
+    border-bottom: 2px solid #000;
+  }
+
+  nav label {
+    display: none;
+  }
+
+  nav ul {
+    display: block;
+  }
+
+  nav ul li {
+    display: inline-block;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+  }
+
+}

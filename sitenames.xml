@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<sites>
+	<site>
+		<name>Home</name>
+    <filename extension="php">index</filename>
+    <!-- <extension>php</extension> -->
+	</site>
+	<site>
+		<name>About</name>
+    <filename extension="php">about</filename>
+	</site>
+  <site>
+		<name>Arbeid</name>
+    <filename extension="php">work</filename>
+	</site>
+</sites>

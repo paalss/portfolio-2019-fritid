@@ -1,0 +1,37 @@
+Logg==================================
+
+
+Backlog:–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+GALLERI
+● Finn mer arbeid / bilder: let i GoogleDrive
+● XML? lese fra det?
+● To forskjellige arrays og foreach (eller begynne med XML eller databaser):
+  • VGS bilder: array og foreach skal ikke differensiere mellom web og ikke-web-bilder.
+  • Nyere bilder: array og foreach skal differensiere mellom web og ikke-web-bilder
+● Bildebeskrivelse: Legge til beskrivelse på arbeids- og fritidsbilder
+
+ANNET
+● bruk en font fra adobe fonts eller noe. last ned.
+● blending mode på .box i MS edge funker ikke. fiks det.
+● Tilbakemelding:   Endre på side etter tilbakemelding, kompetanse på egen side og med bevis/artefakt/innleveringer (kanskje lese tilbakemelding igjen)
+● .box hierarki:    Overskrift og brødtekst i .box
+● Farger:           Ha med litt snasne farger. se color.adobe.com for harmonier
+● tekstplassering:
+  • Om meg-siden: ha tekst i kolonner (med kun .col2 i parent div vil det ikke bli margin)
+● kanskje få til noe interaktivt. noe gøy. innebygget tegneprogram, and som går etter musepeker.
+
+
+Logg:–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+19.11.19––––––––––––––––––––––––––––––
+La til arbeidsside med bilder fra VGS
+Endret galleri slik at hvert bilde er inne i en boks (a-tagen er blitt inline block) og hvert bilde er sentrert inni boksen.
+Har ikke tilgang til ikke-web-versjon på disse, så må lage forskjellige arrays og foreach-løkker.
+● Mindre avstand på tekst på spill-siden
+● ha slik margin på li.box elementene det var kult. De ser mer klikkbare ut
+Fjernet unødvendig kode
+● tekstplassering:
+  • Spill:  Spill-forklaringstekstboks på siden av player
+
+
+Tidligere–––––––––––––––––––––––––––––
+Taggbox alternativ: Ordne permanent løsning med kunst-side. Galleri med lightbox.
